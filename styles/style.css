@@ -43,3 +43,10 @@ iframe {
   margin: 0 auto;
   margin-top: 200px;
 }
+.a4ty-video {
+  position: fixed;
+  right: 5%;
+  bottom: 8%;
+  overflow: hidden;
+  z-index: 1;
+}
