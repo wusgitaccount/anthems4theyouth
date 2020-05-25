@@ -70,5 +70,10 @@ iframe {
 }
 .a4ty-centre:hover{
   color: red;
-
+}
+.a4ty-body{
+  font-family:"Courier New", Courier, monospace;
+  font-size: 1.5vh;
+  width: 50%;
+  text-align: center;
 }
