@@ -59,6 +59,7 @@ iframe {
 .a4ty-bottom{
   width:100%;
   float: left;
+  margin-top: 500px;
 }
 .a4ty-centre{
   font-family: 'Rakkas', cursive;
@@ -76,4 +77,8 @@ iframe {
   font-size: 1.5vh;
   width: 50%;
   text-align: center;
+}
+
+.a4ty-bottom:hover{
+  margin-top: 1%;
 }
