@@ -35,15 +35,13 @@
       <div class="a4ty-top">
         <img src="./assets/more_ideas-01.jpg">
       </div>
-      <div class="a4ty-bottom">
         <img src="./assets/more_ideas-02.jpg">
-      </div>
     </div>
 
     <div class="a4ty-col">
       <div class="a4ty-centre">
-        <img src="./assets/Capture.PNG">
-     </div>
+        <img style="width:300px" src="./assets/Capture.PNG">
+      </div>
     </div>
 
     <div class="a4ty-col">
@@ -88,9 +86,7 @@
     </div>
 
     <div class="a4ty-col">
-      <div class="a4ty-bottom">
-        <img src="./assets/sudoku.jpg">
-      </div>
+        <img style="width:600px" src="./assets/sudoku.jpg" >
     </div>
 
     <div class="a4ty-col">
@@ -109,15 +105,24 @@
     </div>
 
     <div class="a4ty-col">
-        <img src="./assets/Screenshot (346).png">
+      <div class="a4ty-centre">
+        <div class="a4ty-container">
+          <img style="width:70px" src="./assets/spider.gif">
+        </div>
+        <img style="width:500px" src="./assets/Screenshot (346).png">
+      </div>
+
     </div>
     <!-- <div class="a4ty-col">
       <div class="a4ty-centre"
         <heading> THE CREEPING CAPITALIST TAKEOVER OF HIGHER EDUCATION </heading>
       </div>
     </div> -->
+
     <div class="a4ty-col">
-     <img src="./assets/Teenage Riot.jpg">
+      <div class="a4ty-top">
+        <img style="width:700px" src="./assets/Teenage Riot.jpg">
+      </div>
     </div>
 
     <div class="a4ty-col">
@@ -136,27 +141,51 @@
     </div>
 
     <div class="a4ty-col">
+        <img style="width:500px" src="./assets/bonjourtristesse.jpg">
+    </div>
+
+    <div class="a4ty-col">
       <div class="a4ty-centre">
         <img src="./assets/akira.gif">
       </div>
     </div>
 
     <div class="a4ty-col">
-      <div class="a4ty-bottom">
-        <img src="./assets/collage.jpg">
+        <img style="width:700px" src="./assets/collage.jpg">
+    </div>
+
+    <div class="a4ty-col">
+        <img style="width:500px" src="./assets/americanpyscho.jpg">
+    </div>
+
+    <div class="a4ty-col">
+      <div class="a4ty-centre">
+        <img style="width:400px" src="./assets/police.jpg">
       </div>
     </div>
 
     <div class="a4ty-col">
-        <img src="./assets/americanpyscho.jpg">
-        <div class="a4ty-bottom">
-          <img src="./assets/bonjourtristesse.jpg">
-        </div>
+        <img src="./assets/parisprotest.jpg">
+        <heading> The Paris riots of May 1968 </heading>
+        <img src="./assets/parisprotest1.jpg">
     </div>
 <!--  </div>-->
 
 
+<script>
+var videoStorage = [
+  'assets/videos/1.mp4',
+  'assets/videos/2.mp4',
+],
+    video = document.querySelector('video'),
+    // choose one random url from our storage as the active video
+    activeVideoUrl = videoStorage[Math.round(Math.random() * (videoStorage.length - 1))];
 
+// check which file extension your browser can play and set the video source accordingly
+if(video.canPlayType('video/mp4')) {
+    video.setAttribute('src', activeVideoUrl);
+}
+</script>
 </body>
 
 </html>

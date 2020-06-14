@@ -3,34 +3,37 @@
   font-family: "Courier New", Courier, monospace;
 }
 
-img {
+/*img {
   max-width: 100%;
   max-height: 100%;
+}*/
+
+.a4ty-container {
+  position: absolute;
+  z-index: 5;
+  margin-left: 10%;
+  width:5%;
 }
 
 video {
   max-width: 100%;
   max-height: 100%;
 }
-/*.a4ty-container {
-  width: 100%;
-  overflow:hidden;
-  position: relative;
-}*/
-
 .a4ty-col {
   float:left;
   margin:auto;
   display: inline-block;
   width: 2.17391304vw;
   height: 100vh;
-  transition: 1s;
-  overflow:hidden;
+  transition: 2s;
+  overflow:scroll;
   position: relative;
 }
+
 .a4ty-col:hover{
   width: 50%;
   overflow:scroll;
+  background: white;
 }
 
 .a4ty-playlist {
@@ -56,29 +59,23 @@ iframe {
   width:100%;
   float: left;
 }
-.a4ty-bottom{
-  width:100%;
-  float: left;
-  margin-top: 500px;
-}
+
 .a4ty-centre{
   font-family: 'Rakkas', cursive;
   font-size: 5vh;
   width: 50%;
   text-align: center;
-  margin: 0 auto;
-  margin-top: 200px;
+  margin: 20%;
+  position: relative;
 }
+
 .a4ty-centre:hover{
   color: red;
 }
 .a4ty-body{
   font-family:"Courier New", Courier, monospace;
-  font-size: 1.5vh;
+  font-size: 2vh;
   width: 50%;
   text-align: center;
-}
-
-.a4ty-bottom:hover{
-  margin-top: 1%;
+  margin-left:20%;
 }
