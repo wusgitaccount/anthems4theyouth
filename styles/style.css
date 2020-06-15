@@ -23,7 +23,7 @@ video {
   float:left;
   margin:auto;
   display: inline-block;
-  width: 2.17391304vw;
+  width: 2.5vw;
   height: 100vh;
   transition: 2s;
   overflow:scroll;
