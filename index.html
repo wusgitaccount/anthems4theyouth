@@ -4,7 +4,8 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="./js/anthemz.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
   <link rel="stylesheet" href="./styles/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Rakkas&display=swap" rel="stylesheet">
   <title> sophgal666 </title>
@@ -205,22 +206,10 @@ if(video.canPlayType('video/mp4')) {
 }
 </script>
 
-<script>
-const preloader = document.querySelector(".spinner-wrapper");
-
-const fadeEffect = setInterval(() => {
-  // if we don't set opacity 1 in CSS, then   //it will be equaled to "", that's why we   // check it
-  if (!preloader.style.opacity) {
-    preloader.style.opacity = 1;
-  }
-  if (preloader.style.opacity > 0) {
-    preloader.style.opacity -= 0.1;
-  } else {
-    clearInterval(fadeEffect);
-  }
-}, 200);
-
-window.addEventListener("load", fadeEffect);
+ <script>
+ $( document ).ready(function() {
+     $(".spinner-wrapper").delay(5000).fadeOut();
+ });
 
 </script>
 
