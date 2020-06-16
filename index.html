@@ -12,6 +12,9 @@
 
 <body>
 <!--  <div class="a4ty-container"> -->
+<div class="spinner-wrapper">
+  <div class="spinner"> &#9786; </div>
+</div>
 
     <div class="a4ty-video" id="videolink1">
       <video id="videoclip" width=:"400" height="300" loop muted autoplay>
@@ -183,7 +186,6 @@
       <div class="a4ty-container">
         <img style="width:100px" src="./assets/usuck.gif">
       </div>
-        <img style="width:300px" src="./assets/snapchat.png">
     </div>
 <!--  </div>-->
 
@@ -202,6 +204,27 @@ if(video.canPlayType('video/mp4')) {
     video.setAttribute('src', activeVideoUrl);
 }
 </script>
+
+<script>
+const preloader = document.querySelector(".spinner-wrapper");
+
+const fadeEffect = setInterval(() => {
+  // if we don't set opacity 1 in CSS, then   //it will be equaled to "", that's why we   // check it
+  if (!preloader.style.opacity) {
+    preloader.style.opacity = 1;
+  }
+  if (preloader.style.opacity > 0) {
+    preloader.style.opacity -= 0.1;
+  } else {
+    clearInterval(fadeEffect);
+  }
+}, 200);
+
+window.addEventListener("load", fadeEffect);
+
+</script>
+
+
 </body>
 
 </html>
