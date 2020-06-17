@@ -25,10 +25,12 @@ animation-iteration-count: infinite;
 animation-timing-function: linear;
 }
 .container{
+  position: fixed;
   float: right;
-  width: 50vw;
+  left: 50vw;
   height: 100vh;
-  overflow:scroll;
+  overflow: scroll;
+  z-index: -800;
 }
 @keyframes spin {
     from {
