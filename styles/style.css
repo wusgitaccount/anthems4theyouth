@@ -17,6 +17,7 @@ background-position: center;
 }
 .spinner{
 position: absolute;
+font-size: 50px;
 top: 48%;
 left: 48%;
 animation-name: spin;
