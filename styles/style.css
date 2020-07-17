@@ -67,13 +67,18 @@ video {
   overflow:scroll;
   position: relative;
 }
+.a4ty-col--red {
+  background-color: red;
+}
 
 .a4ty-col:hover{
   width: 50%;
   overflow:scroll;
   background: white;
 }
-
+.a4ty-col--red:hover {
+  background-color: red;
+}
 .a4ty-playlist {
   width:100%;
   height:100%;
